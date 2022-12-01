@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingVertical="20dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="379dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/whisapp" />
+
+
+    <TextView
+        android:id="@+id/usermessage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="top"
+        android:textSize="20dp"
+        android:hint="Message" />
+
+    <TextView
+        android:id="@+id/hashAndEncrypt"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="20dp"
+        android:gravity="top"
+        android:hint="Encrypted Message: #S2!@3$" />
+    <Button
+        android:id="@+id/decryption"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/button_bg"
+        android:text="Decrypt" />
+
+    <TextView
+        android:id="@+id/hashmessage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="20dp"
+        android:gravity="top"
+        android:hint="Message: #S2!@3$" />
+    <Button
+        android:id="@+id/btnhash"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/button_bg"
+        android:text="Hash" />
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="10dp"
+        android:text="Verify" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:textSize="20dp"
+        android:hint="Status" />
+
+</LinearLayout>
